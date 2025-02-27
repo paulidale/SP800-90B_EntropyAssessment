@@ -4,7 +4,7 @@ CXX ?= $(CROSS_COMPILE)g++
 
 CXXFLAGS = -std=c++11 -fopenmp -O2 -ffloat-store -I/usr/include/jsoncpp
 ifeq ($(ARCH),x86)
-CXXFLAGS += -msse2 -march=native
+CXXFLAGS += -march=native
 endif
 
 #CXX = clang++-15
